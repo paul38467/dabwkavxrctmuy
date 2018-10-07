@@ -1,0 +1,226 @@
+html {
+  font-size: 18px; /* Bootstrap 4 Default font-size is 16px */
+}
+body {
+  background-color: #f4f6f9;
+  /*font-family: Arial, sans-serif;*/
+  padding-top: 3.5rem; /* Move down content because we have a fixed navbar that is 3.5rem(or 56px) tall */
+  /*padding-top: 4.375rem;*/
+}
+
+/*
+ * Top navbar
+ */
+.navbar-dark.my-navbar .navbar-nav .show > .nav-link,
+.navbar-dark.my-navbar .navbar-nav .active > .nav-link,
+.navbar-dark.my-navbar .navbar-nav .nav-link.show,
+.navbar-dark.my-navbar .navbar-nav .nav-link.active,
+.navbar-dark.my-navbar .navbar-nav .nav-link:hover {
+  color: aqua !important;
+}
+
+/*
+ * Sidebar
+ */
+.my-sidebar {
+  position: fixed;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  background-color: #454d54; /* #505962 , #343a40 */
+  color: #fff;
+  top: 3.5rem; /* same as body */
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+.my-sidebar .nav {
+  margin-bottom: 25px;
+}
+.my-sidebar .nav-item {
+  width: 100%;
+}
+.my-sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+.my-sidebar .nav-link {
+  color: rgb(221, 221, 221, .7);
+  border-radius: 0;
+}
+.my-sidebar .nav-link.active {
+  color: #ffbb33; /* #f0ad4e #fff */
+  background-color: transparent;
+}
+.my-sidebar .nav-link:hover {
+  background-color: #336699;
+}
+.my-sidebar .my-sidebar-search {
+  position: relative;
+  padding: .75rem 15px;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.my-sidebar .my-sidebar-search input[type="search"]:focus {
+  border-color: rgba(102, 255, 51, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 255, 51, 0.6);
+  outline: 0 none;
+}
+.my-sidebar .my-sidebar-header {
+  margin: 15px 1rem 6px;
+  border-bottom: 3px solid #8cb3d9;
+  color: #8cb3d9;
+}
+
+/*
+ * Others
+ */
+
+/* fix click on anchor, navbar cover anchor */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -3.5rem; /* same as body */
+  visibility: hidden;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+.my-link-visited a:visited {
+  color: #920114;
+}
+
+.my-display-none {
+  display: none;
+}
+
+/* set the hr height and with color */
+.my-hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 4px;
+  color: #17a2b8;
+  background-color: #17a2b8;
+  border: none;
+}
+
+/* Artist profile, keyword textarea */
+.my-textarea-pre {
+  white-space: pre;
+}
+
+/* my-badge font-size, font-family*/
+.my-badge {
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Artist profile > tag modal, set the button active style */
+.my-button-checkbox .active {
+  color: white !important;
+  background-color: #428bca !important;
+  border-color: #428bca !important;
+}
+
+/* grade stars font color */
+.my-grade-stars {
+  color: #edb867;
+}
+
+/*
+ * Bootstrap Card Navigation
+ */
+
+/* if card set bg-light, fix the tag color */
+.card.bg-light .nav-tabs .nav-link.active {
+  background-color: #f8f9fa;
+  border-color: #dee2e6 #dee2e6 #f8f9fa;
+}
+/* Card Navigation, set a div pull right */
+.my-card-nav-pull-right {
+  display: block;
+  padding: .5rem 1rem;
+}
+
+/*
+ * Artist Card
+ */
+
+/* Artist avatar card, set the age badge */
+.my-card-age-badge {
+  position: absolute;
+  font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+  top: -12px;
+  right: -10px;
+  z-index: 1;
+}
+
+/*
+ * override Bootstrap form placeholder
+ */
+
+.form-control::-webkit-input-placeholder {
+  color: #6c757d;
+  opacity: 0.7;
+}
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 0.7;
+}
+.form-control:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 0.7;
+}
+.form-control::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 0.7;
+}
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.7;
+}
+
+/*
+ * Bootstrap - 5 columns grid
+ * ref to: https://blog.polarbits.co/2014/02/16/quick-tips-5-column-layout-with-twitter-bootstrap/
+ */
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}

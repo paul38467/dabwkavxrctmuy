@@ -10,9 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+\Debugbar::disable();
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+// test-views
+Route::prefix('test-views')->name('test_views.')->group(function () {
+    Route::view('/', 'test_views.index')->name('index');
 });
 
 Auth::routes();
