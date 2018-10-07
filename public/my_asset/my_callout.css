@@ -1,0 +1,240 @@
+/*!
+ * my_callout.css
+ *
+ * modify by Bootstrap Document v4.1.1 bdcallout
+ * Font Awesome 5 uses svg for icons, so in the colors selector use svg
+ * Type Colors : primary, secondary, success, info, warning, danger
+ * Other Colors: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, dark
+ */
+.my-callout {
+  padding: 1.25rem;
+  /*margin-top: 1.25rem;*/
+  /*margin-bottom: 1.25rem;*/
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+}
+.my-callout h4,
+.my-callout h5,
+.my-callout p:first-child {
+  margin-top: 0;
+  margin-bottom: .25rem;
+}
+.my-callout p:last-child {
+  margin-bottom: 0;
+}
+.my-callout code {
+  border-radius: .25rem;
+}
+/*
+.my-callout+.my-callout {
+  margin-top: -.25rem;
+}
+*/
+
+/* Type Colors */
+.my-callout-primary {
+  border-color: #428bca;
+  background-color: rgba(66, 139, 202, 0.15);
+}
+.my-callout-primary i,
+.my-callout-primary svg,
+.my-callout-primary h4,
+.my-callout-primary h5 {
+  color: #428bca;
+}
+.my-callout-secondary {
+  border-color: #6c757d;
+  background-color: rgba(108, 117, 125, 0.15);
+}
+.my-callout-secondary i,
+.my-callout-secondary svg,
+.my-callout-secondary h4,
+.my-callout-secondary h5 {
+  color: #6c757d;
+}
+.my-callout-success {
+  border-color: #5cb85c;
+  background-color: rgba(92, 184, 92, 0.15);
+}
+.my-callout-success i,
+.my-callout-success svg,
+.my-callout-success h4,
+.my-callout-success h5 {
+  color: #5cb85c;
+}
+.my-callout-info {
+  border-color: #5bc0de;
+  background-color: rgba(91, 192, 222, 0.15);
+}
+.my-callout-info i,
+.my-callout-info svg,
+.my-callout-info h4,
+.my-callout-info h5 {
+  color: #5bc0de;
+}
+.my-callout-warning {
+  border-color: #f0ad4e;
+  background-color: rgba(240, 173, 78, 0.15);
+}
+.my-callout-warning i,
+.my-callout-warning svg,
+.my-callout-warning h4,
+.my-callout-warning h5 {
+  color: #f0ad4e;
+}
+.my-callout-danger {
+  border-color: #d9534f;
+  background-color: rgba(217, 83, 79, 0.15);
+}
+.my-callout-danger i,
+.my-callout-danger svg,
+.my-callout-danger h4,
+.my-callout-danger h5 {
+  color: #d9534f;
+}
+/* Other Colors */
+.my-callout-blue {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.15);
+}
+.my-callout-blue i,
+.my-callout-blue svg,
+.my-callout-blue h4,
+.my-callout-blue h5 {
+  color: #007bff;
+}
+.my-callout-indigo {
+  border-color: #6610f2;
+  background-color: rgba(102, 16, 242, 0.15);
+}
+.my-callout-indigo i,
+.my-callout-indigo svg,
+.my-callout-indigo h4,
+.my-callout-indigo h5 {
+  color: #6610f2;
+}
+.my-callout-purple {
+  border-color: #6f42c1;
+  background-color: rgba(111, 66, 193, 0.15);
+}
+.my-callout-purple i,
+.my-callout-purple svg,
+.my-callout-purple h4,
+.my-callout-purple h5 {
+  color: #6f42c1;
+}
+.my-callout-pink {
+  border-color: #e83e8c;
+  background-color: rgba(232, 62, 140, 0.15);
+}
+.my-callout-pink i,
+.my-callout-pink svg,
+.my-callout-pink h4,
+.my-callout-pink h5 {
+  color: #e83e8c;
+}
+.my-callout-red {
+  border-color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.15);
+}
+.my-callout-red i,
+.my-callout-red svg,
+.my-callout-red h4,
+.my-callout-red h5 {
+  color: #dc3545;
+}
+.my-callout-orange {
+  border-color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.15);
+}
+.my-callout-orange i,
+.my-callout-orange svg,
+.my-callout-orange h4,
+.my-callout-orange h5 {
+  color: #fd7e14;
+}
+.my-callout-yellow {
+  border-color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.15);
+}
+.my-callout-yellow i,
+.my-callout-yellow svg,
+.my-callout-yellow h4,
+.my-callout-yellow h5 {
+  color: #ffc107;
+}
+.my-callout-green {
+  border-color: #28a745;
+  background-color: rgba(40, 167, 69, 0.15);
+}
+.my-callout-green i,
+.my-callout-green svg,
+.my-callout-green h4,
+.my-callout-green h5 {
+  color: #28a745;
+}
+.my-callout-teal {
+  border-color: #20c997;
+  background-color: rgba(32, 201, 151, 0.15);
+}
+.my-callout-teal i,
+.my-callout-teal svg,
+.my-callout-teal h4,
+.my-callout-teal h5 {
+  color: #20c997;
+}
+.my-callout-cyan {
+  border-color: #17a2b8;
+  background-color: rgba(23, 162, 184, 0.15);
+}
+.my-callout-cyan i,
+.my-callout-cyan svg,
+.my-callout-cyan h4,
+.my-callout-cyan h5 {
+  color: #17a2b8;
+}
+.my-callout-dark {
+  border-color: #343a40;
+  background-color: rgba(52, 58, 64, 0.15);
+}
+.my-callout-dark i,
+.my-callout-dark svg,
+.my-callout-dark h4,
+.my-callout-dark h5 {
+  color: #343a40;
+}
+/* Horizontal style, override border and set left border */
+.my-callout-left {
+  border-top-color: #ddd;
+  border-right-color: #ddd;
+  border-bottom-color: #ddd;
+  border-left-width: .25rem;
+}
+/* Vertical style, override border and set top border */
+.my-callout-top {
+  border-left-color: #ddd;
+  border-right-color: #ddd;
+  border-bottom-color: #ddd;
+  border-top-width: .25rem;
+}
+/* Horizontal concat */
+.my-callout-h-concat:not(:first-child) .my-callout {
+  margin-left: -.23rem;
+}
+/* Vertical concat */
+.my-callout-v-concat .my-callout:not(:first-child)  {
+  margin-top: -1.23rem;
+}
+/* Size */
+.my-callout-sm {
+  padding: .75rem;
+}
+.my-callout-xs {
+  padding: .5rem;
+}
+
+/* No background color */
+.my-callout-no-bg {
+  background-color: transparent;
+}

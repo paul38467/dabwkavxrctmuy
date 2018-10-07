@@ -19,5 +19,10 @@
             <i class="fas fa-angle-right fa-fw"></i> alert_with
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link {{ active_if_routes('test_views.test_my_callout') }}" href="{{ route_uri('test_views.test_my_callout') }}">
+            <i class="fas fa-angle-right fa-fw"></i> my_callout
+        </a>
+    </li>
 </ul>
 <!-- end test_views.sidebar -->
