@@ -14,5 +14,10 @@
             <i class="fas fa-angle-right fa-fw"></i> alert
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link {{ active_if_routes('test_views.test_alert_with') }}" href="{{ route_uri('test_views.test_alert_with') }}">
+            <i class="fas fa-angle-right fa-fw"></i> alert_with
+        </a>
+    </li>
 </ul>
 <!-- end test_views.sidebar -->

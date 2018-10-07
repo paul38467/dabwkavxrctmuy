@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::prefix('test-views')->name('test_views.')->group(function () {
     Route::view('/', 'test_views.index')->name('index');
     Route::view('/test-alert', 'test_views.test_alert')->name('test_alert');
+    Route::view('/test-alert-with', 'test_views.test_alert_with')->name('test_alert_with');
 });
 
 Auth::routes();
