@@ -28,6 +28,15 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::patch('{region}', 'RegionController@update')->name('update');
         Route::delete('{region}', 'RegionController@destroy')->name('destroy');
     });
+
+    // admin/artist-tagcats
+    Route::prefix('artist-tagcats')->name('artist_tagcats.')->group(function () {
+        Route::get('/', 'ArtistTagcatController@index')->name('index');
+        Route::get('{artistTagcat}/edit', 'ArtistTagcatController@edit')->name('edit');
+        Route::post('/', 'ArtistTagcatController@store')->name('store');
+        Route::patch('{artistTagcat}', 'ArtistTagcatController@update')->name('update');
+        Route::delete('{artistTagcat}', 'ArtistTagcatController@destroy')->name('destroy');
+    });
 });
 
 // test-views

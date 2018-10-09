@@ -14,5 +14,10 @@
             <i class="fas fa-cog fa-fw"></i> 地區
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link {{ active_if_routes('admin.artist_tagcats*') }}" href="{{ route_uri('admin.artist_tagcats.index') }}">
+            <i class="fas fa-cog fa-fw"></i> 藝人的標籤分類
+        </a>
+    </li>
 </ul>
 <!-- end admin.sidebar -->
