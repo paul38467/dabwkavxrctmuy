@@ -2,7 +2,7 @@ html {
   font-size: 18px; /* Bootstrap 4 Default font-size is 16px */
 }
 body {
-  background-color: #f4f6f9;
+  background-color: #ecf0f5; /* #f4f6f9 */
   /*font-family: Arial, sans-serif;*/
   padding-top: 3.5rem; /* Move down content because we have a fixed navbar that is 3.5rem(or 56px) tall */
   /*padding-top: 4.375rem;*/
