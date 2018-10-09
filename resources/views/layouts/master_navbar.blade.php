@@ -15,8 +15,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">電影</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">管理</a>
+            <li class="nav-item {{ active_if_routes('admin*') }}">
+                <a class="nav-link" href="{{ route_uri('admin.index') }}">管理
+                    @if (active_if_routes('admin*') == 'active') <span class="sr-only">(current)</span> @endif
+                </a>
             </li>
             <li class="nav-item {{ active_if_routes('test_views*') }}">
                 <a class="nav-link" href="{{ route_uri('test_views.index') }}">測試

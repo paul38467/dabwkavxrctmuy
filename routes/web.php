@@ -16,6 +16,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// admin
+Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
+    Route::view('/', 'admin.index')->name('index');
+});
+
 // test-views
 Route::prefix('test-views')->name('test_views.')->group(function () {
     Route::view('/', 'test_views.index')->name('index');
