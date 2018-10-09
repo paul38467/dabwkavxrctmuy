@@ -9,5 +9,10 @@
             <i class="fas fa-home fa-fw"></i> 首頁
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link {{ active_if_routes('admin.regions*') }}" href="{{ route_uri('admin.regions.index') }}">
+            <i class="fas fa-cog fa-fw"></i> 地區
+        </a>
+    </li>
 </ul>
 <!-- end admin.sidebar -->

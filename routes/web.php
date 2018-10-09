@@ -19,6 +19,15 @@ Route::get('/', function () {
 // admin
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     Route::view('/', 'admin.index')->name('index');
+
+    // admin/regions
+    Route::prefix('regions')->name('regions.')->group(function () {
+        Route::get('/', 'RegionController@index')->name('index');
+        Route::get('{region}/edit', 'RegionController@edit')->name('edit');
+        Route::post('/', 'RegionController@store')->name('store');
+        Route::patch('{region}', 'RegionController@update')->name('update');
+        Route::delete('{region}', 'RegionController@destroy')->name('destroy');
+    });
 });
 
 // test-views
