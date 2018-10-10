@@ -22,8 +22,7 @@ class ArtistTagcatController extends Controller
      */
     public function index()
     {
-        // $artistTagcats = ArtistTagcat::withCount('artistTags')->get(); // 將來整合 artistTags
-        $artistTagcats = ArtistTagcat::all();
+        $artistTagcats = ArtistTagcat::withCount('artistTags')->get();
         return view('admin.artist_tagcats.index', compact('artistTagcats'));
     }
 
@@ -93,10 +92,10 @@ class ArtistTagcatController extends Controller
     public function destroy(ArtistTagcat $artistTagcat)
     {
         // 防止刪除有標籤的分類
-        // if ($artistTagcat->artistTags->count())
-        // {
-        //     return back();
-        // }
+        if ($artistTagcat->artistTags->count())
+        {
+            return back();
+        }
 
         $artistTagcat->delete();
         return redirect()->route('admin.artist_tagcats.index');

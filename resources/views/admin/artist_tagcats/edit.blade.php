@@ -13,11 +13,7 @@
 @component('components.common_edit_delete')
     @slot('header_edit', '編輯分類')
     @slot('header_delete', '刪除分類')
-{{--
-    將來要改為實際資料數目
     @slot('data_total', $artistTagcat->artistTags->count())
- --}}
-    @slot('data_total', 0)
     @slot('url_back', route_uri('admin.artist_tagcats.index'))
     @slot('action_update', route_uri('admin.artist_tagcats.update', $artistTagcat))
     @slot('action_delete', route_uri('admin.artist_tagcats.destroy', $artistTagcat))

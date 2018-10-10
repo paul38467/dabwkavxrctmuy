@@ -45,11 +45,7 @@
                 <tr>
                     <th scope="row">{{ $artistTagcat->id }}</th>
                     <td><i class="fas fa-tags fa-fw text-success"></i> {{ $artistTagcat->name }}</td>
-{{--
-                    將來要整合各相關項目資料數目
                     <td class="text-right text-danger">{{ number_format($artistTagcat->artist_tags_count) }}</td>
- --}}
-                    <td class="text-right text-danger">0</td>
                     <td class="text-center">
                         <a class="btn btn-primary btn-sm" href="{{ route_uri('admin.artist_tagcats.edit', $artistTagcat) }}">
                             <i class="fas fa-pen"></i> 編輯
