@@ -37,6 +37,15 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::patch('{artistTagcat}', 'ArtistTagcatController@update')->name('update');
         Route::delete('{artistTagcat}', 'ArtistTagcatController@destroy')->name('destroy');
     });
+
+    // admin/artist-tags
+    Route::prefix('artist-tags')->name('artist_tags.')->group(function () {
+        Route::get('/', 'ArtistTagController@index')->name('index');
+        Route::get('{artistTag}/edit', 'ArtistTagController@edit')->name('edit');
+        Route::post('/', 'ArtistTagController@store')->name('store');
+        Route::patch('{artistTag}', 'ArtistTagController@update')->name('update');
+        Route::delete('{artistTag}', 'ArtistTagController@destroy')->name('destroy');
+    });
 });
 
 // test-views
